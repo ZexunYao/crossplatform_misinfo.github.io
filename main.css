@@ -1,0 +1,67 @@
+.clearfloat {
+  clear: both;
+}
+
+#nav {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav li{
+  background-color: lightblue;
+  width: 538px;
+  text-align: center;
+  position: relative;
+}
+
+#nav > ul{
+  display: flex;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  right: 2px;
+}
+
+#nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+#nav ul ul ul {
+  top:0px;
+  left: 401px;
+}
+
+#nav li:hover > ul {
+  display: block;
+}
+
+#navbar {
+  background-color: lightblue;
+  z-index: 100;
+}
+
+#nav a:hover, #nav #active-nav {
+  background-color: #FFD580;
+}
+
+#footer {
+  background-color: #AAA;
+  font-size: 0.8em;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+
+}
