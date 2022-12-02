@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CKIDS HomePage</title>
+
+    <link href="main.css" rel="stylesheet">
+
+    <style media="screen">
+
+
+      p{
+        font-size: 1.1em;
+      }
+
+      h1{
+        padding-top: 50px;
+      }
+
+      body{
+        background-color: white;
+      }
+
+      #header {
+        background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2018_05/2314116/180201-twitter-logo-ac-702p.jpg");
+        /* height:600px; */
+        background-size:cover;
+        background-position: center;
+        overflow: hidden;
+        color: #FFF;
+        font-size: 2.5em;
+        text-align: center;
+        font-family: "Daydreamer", fantasy;
+        line-height: 350px;
+
+        text-shadow: 0px 0px 10px #000;
+      }
+
+
+      #main {
+        width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: lightcyan; */
+
+        padding: 30px;
+      }
+
+      #location {
+        width:300px;
+        height:200px;
+        float: right;
+        margin-left: 25px;
+        margin-right: 15px;
+
+      }
+
+      #location2 {
+        width:500px;
+        height:400px;
+        float: right;
+        margin-left: 25px;
+        margin-right: 15px;
+
+
+      #ad {
+        width:300px;
+        height:200px;
+        float: left;
+        margin-right: 15px;
+      }
+
+      .pic2{
+        width: 100%;
+        padding-top:100px;
+        padding-left:0px;
+      }
+
+      .center {
+        overflow:hidden;
+        position: relative;
+      }
+
+      .caption {
+        position: absolute;
+        top: 100px;
+        bottom: 0px;
+        left:0px;
+        right:0px;
+        background-color: #000;
+        background-color: rgba(0,0,0,0.3);
+        color: #FFF;
+        text-align: center;
+        padding-top: 500px;
+        visibility: hidden;
+        font-size: 2em;
+      }
+
+      .center:hover >.caption {
+        visibility: visible;
+      }
+
+      h3{
+        padding-left: 35px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="header">
+      <h1>CKIDS: Cross-Platform Misinfo</h1>
+    </div>
+
+    <div id="navbar">
+
+      <div id="nav">
+        <ul>
+  				<li><a href="index.html" id="active-nav">About the Project</a></li>
+          <li><a href="secondpage.html">Team</a></li>
+          <li>
+            <a href="thirdpage.html">Research</a>
+            <ul>
+              <li><a href="thirdpage.html#szmuseum">Study 1: Pathways to Virality</a></li>
+              <!-- <li><a href="thirdpage.html#szgarden">Information resources in time of crisis</a>
+              </li> -->
+              <li><a href="thirdpage.html#tiger">Study 2: Screenshot detection</a>
+            </ul>
+          </li>
+  				<!-- <li><a href="fourthpage.html">something here</a></li> -->
+  			</ul>
+      </div>
+
+    </div>
+
+    <div id="main">
+
+      <div id="introduction">
+        <h1>Description of the project</h1>
+        <img id="location" src="https://m.economictimes.com/thumb/msid-78630777,width-1200,height-900,resizemode-4,imgsize-79014/fact-getty.jpg" alt="images here">
+        <h2>Objective/Motivation: </h2>
+        <h3>Identify and characterize the cross-platform diffusion and proliferation of harmful content and misinformation</h3>
+        <br>
+        <h2>General Goals of the research:</h2>
+        <ul>
+          <li>Investigate how harmful narratives flow across diverse platforms</li>
+          <li>predict which stories will gain traction on mainstream media</li>
+          <li>uncover malicious activity to spread misinformation in low- and high-moderated platforms</li>
+        </ul>
+
+        <br>
+
+        <img id="location2" src="https://www.mdpi.com/sustainability/sustainability-14-10466/article_deploy/html/images/sustainability-14-10466-ag.png" alt="images here">
+        <h2>Study 1: Pathways to Virality (Jinyi and Aaron)</h2>
+          <ul>
+            <li>Task: identify intra- and cross-platform diffusion pathways of viral content</li>
+            <li>Study case: diffusion of links (URLs) within and across platforms </li>
+            <li>Goals:
+            <ol>
+              1. identify and characterize the URLs that got viral on multiple platforms
+            </ol>
+            <ol>
+              2. examine the users interaction patterns (intra-platform) that brought a URL to get viral
+            </ol>
+            <ol>
+              3. investigate the diffusion of viral URLs across platforms and their growth in virality over time
+            </ol>
+            </li>
+          </ul>
+
+          <br>
+          <h2>Study 2: Moderated posts detection (Duyen, William and Yao)</h2>
+            <ul>
+              <li>Task: design an AI approach to automatically detect the diffusion of moderated content on different platforms</li>
+              <li>Study case: screenshots of removed Twitter posts are often shared on Twitter and other platforms</li>
+              <li>Goals:
+              <ol>
+                1. detect and study the content of these screenshots
+              </ol>
+              <ol>
+                2. identify and characterize the authors of the original post and the spreaders of screenshots
+              </ol>
+              <ol>
+                3. investigate the diffusion of screenshots across multiple platforms
+              </ol>
+              </li>
+            </ul>
+      </div>
+
+      <!-- <div id="Administrative_divisions">
+        <img id="ad" src="final/sz3.jpeg" alt="images here">
+        <p>words here</p>
+      </div>
+
+      <div id="wheather">
+        <p></p>
+      </div> -->
+
+      <!-- <div id="szcenter" class="center">
+          <img class="pic2" src="final/suzhou1.jpeg" alt="suzhou">
+          <div class="caption">Welcome To Suzhou</div>
+      </div> -->
+      </div>
+
+
+    <div id="footer">
+        CKIDS DataFest Fall 2022: Identification and characterization of cross-platform misinformation diffusion &copy;
+    </div>
+
+  </body>
+</html>
