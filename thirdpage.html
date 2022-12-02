@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CKIDS ThirdPage</title>
+    <link href="main.css" rel="stylesheet">
+
+  <style media="screen">
+
+    #header {
+      background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2018_05/2314116/180201-twitter-logo-ac-702p.jpg");
+      /* height:600px; */
+      background-size:cover;
+      background-position: center;
+      overflow: hidden;
+      color: #FFF;
+      font-size: 2.5em;
+      text-align: center;
+      font-family: "Daydreamer", fantasy;
+      line-height: 350px;
+
+      text-shadow: 0px 0px 10px #000;
+    }
+
+    /* h1{
+      font-family: 'Fuzzy Bubbles', cursive;;
+      font-style: oblique;
+    }
+
+    h3{
+      font-family: 'Roboto', sans-serif;
+    } */
+
+    p{
+      /* font-family: 'Teko', sans-serif; */
+      font-size: 1em;
+    }
+
+    #main {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      /* background-color: lightcyan; */
+
+      /* padding-left: : 30px; */
+      padding-left: 200px;
+    }
+
+    #causa {
+      width: 1000px;
+    }
+
+    #img1 {
+      width: 1000px;
+    }
+    #img2 {
+      width: 1000px;
+    }
+
+    #img7 {
+      width: 650px;
+    }
+    #img8 {
+      width: 450px;
+    }
+
+    .landmark {
+      width: 500px;
+      height: 500px;
+    }
+
+    .landmark2 {
+      width: 900px;
+      height: 500px;
+    }
+
+    #left{
+      float:left;
+    }
+
+    #right {
+      padding-left: 500px;
+    }
+
+    #img3{
+      width: 1000px;
+    }
+
+    #IMG5{
+      width: 1100px;
+    }
+
+  </style>
+
+  </head>
+
+  <body>
+
+    <div id="header">
+      <h1>Research</h1>
+    </div>
+
+    <div id="navbar">
+
+      <div id="nav">
+        <ul>
+          <li><a href="index.html">About the Project</a></li>
+          <li><a href="secondpage.html">Team</a></li>
+          <li>
+            <a href="thirdpage.html" id="active-nav">Research</a>
+            <ul>
+              <li><a href="thirdpage.html#szmuseum">Study 1: Pathways to Virality</a></li>
+              <!-- <li><a href="thirdpage.html#szgarden">Information resources in time of crisis</a>
+              </li> -->
+              <li><a href="thirdpage.html#tiger">Study 2: Screenshot detection</a>
+            </ul>
+          </li>
+          <!-- <li><a href="fourthpage.html">Something here</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div id="main">
+
+      <div id="szmuseum">
+        <h1>Study1: Pathways to Virality</h1>
+        <h3>Deliverable 1: The diffusion of shared URLs and interaction network among multiple platforms</h3>
+        <img class="landmark" src="img/all-domains.png" alt="placeholder">
+        <ul>
+          <li>Network attributes:
+            <ol>
+              · Nodes: mainstream social media, niche social media, mainstream media, misinformation media, fundraising sites; size and color based on degree centrality
+            </ol>
+            <ol>
+              · Edges: the number of URLs linking one platform to the other, width and color based on weights
+            </ol>
+          </li>
+          <br>
+          <li>Data and Method:
+            <ol>
+              · Posts with links related to Russian-Ukraine war from February to April 2022 on 4 platforms: Facebook (9.03M links), Twitter (8.16M links), Instagram (47K links) and Bitchute (3K links)
+            </ol>
+            <ol>
+              · Links in the posts are identified, extracted, expanded, parsed based on domain name, counted and ranked in each platform
+            </ol>
+          </li>
+          <br>
+          <li>Results:
+            <ol>
+              · Facebook and Twitter are the main hubs of URLs diffusion, with intra-platform links (Facebook 83.5%, Twitter 34.4%) much more than cross-platform links
+            </ol>
+          </li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        <img class="landmark" src="img/social-media.png" alt="placeholder">
+        <h4>Social Media Network (Mainstream and Niche Platforms)</h4>
+        <p>Niche platforms like Rumble, Gettr, Parler, Gab, Discord, Viber are identified. Messages originated from fringe communities can sometimes get mainstream traction. They account for roughly 2.7%, 9.1%, 36.6% and 5.6% of all links in Facebook, Twitter, BitChute and Instagram. </p>
+        <br>
+        <br>
+        <img class="landmark" src="img/media.png" alt="placeholder">
+        <h4>Media Network (Mainstream and Misinformation Media Sites)</h4>
+        <p>Misinformation sites like The Gateway Pundit, Rebel News, Zero Hedge and Breitbart are identified. Drawing from the list of low-credibility news sources from iffy.news, links to misinformation sites took up of 0.20% and 0.58% of all Facebook and Twitter links, respectively. Top low credibility sites are Rumble, ria.ru, Gettr, sputniknews, Sputnik News.</p>
+        <br>
+        <br>
+        <img class="landmark" src="img/fundraising.png" alt="placeholder">
+        <h4>Fundraising Sites</h4>
+        <p>Fundraising sites like Patreon, PayPal and GoFundMe are identified. Facebook and Twitter are the main venues for fundraising activities, accounting for 99.3% of all links shared.</p>
+        <br>
+        <br>
+        <br>
+
+        <h3>Deliverable 2: The diffusion of viral URLs across platforms and their growth and relation over time</h3>
+        <h4>Method: Granger causality tests</h4>
+        <img class="landmark" id="causa" src="img/WechatIMG9.jpeg" alt="placeholder">
+        <ul>
+          <li>Data Processing:
+            <ol>
+              · Mutual links with over 100 shares on Twitter, Facebook and Instagram
+            </ol>
+            <ol>
+              · Time frame: from the first appearance to the second peak
+            </ol>
+            <ol>
+              · Unit of analysis: hour
+            </ol>
+            <ol>
+              · Identify the place where first appearance and the peak occur
+            </ol>
+            <ol>
+              · Perform granger causality test within the selected time frame
+            </ol>
+            <ol>
+              · Check if the data is stationary before testing
+            </ol>
+          </li>
+        </ul>
+        <img class="landmark" id= "img1" src="img/WechatIMG10.jpeg" alt="placeholder">
+        <img class="landmark" id= "img2" src="img/WechatIMG11.jpeg" alt="placeholder">
+
+        <ul>
+          <li>Results:
+            <ol>
+              · Most of the links (over 70%) starts from Facebook, then diffusing to other platforms
+            </ol>
+            <ol>
+              · News page, fundraising sites, online support pages and petition links tend to gain more cross-platform diffusion and virality
+            </ol>
+            <ol>
+              · Multiple peaks are identified in the temporal evolution of some of the most viral links, indicating a long-lasting effect
+            </ol>
+
+          </li>
+        </ul>
+        <img class="landmark" id = "img7" src="img/WechatIMG7.jpeg" alt="placeholder">
+        <img class="landmark" id = "img8" src="img/WechatIMG8.jpeg" alt="placeholder">
+
+        <br>
+        <br>
+        <h3>Deliverable 3: The diffusion, contents and temporal evolution of Google Docs and Google Forms</h3>
+        <h4>Methodology of Downloading Images from Twitter dataset</h4>
+        <ul>
+          <li>Extract domain subset from the Twitter and Facebook data sets</li>
+          <li>Look at top 50 most frequent links from each data set</li>
+          <li>Qualitatively classify each link into categories</li>
+        </ul>
+
+        <img class="landmark" id="img3" src="img/img1.png" alt="placeholder">
+        <ul id="left">
+          Google Forms
+          <li>Extract domain subset from the Twitter and Facebook data sets</li>
+          <li>Look at top 50 most frequent links from each data set</li>
+          <li>Qualitatively classify each link into categories</li>
+        </ul>
+
+        <ul id="right">
+          Google Docs
+          <li>Extract domain subset from the Twitter and Facebook data sets</li>
+          <li>Look at top 50 most frequent links from each data set</li>
+          <li>Qualitatively classify each link into categories</li>
+        </ul>
+
+        <br>
+        <h3>“Google Forms” Data:</h3>
+        <ul>
+          Twitter Google Platforms
+          <li>1358 unique Google Form Links</li>
+          <li>24088 instances of links</li>
+        </ul>
+        <img class="landmark" src="img/img5.png" alt="placeholder">
+        <img class="landmark" src="img/img6.png" alt="placeholder">
+
+        <br>
+        <br>
+
+        <ul>
+          Facebook Google Platforms
+          <li>8191 unique Google Form Links</li>
+          <li>24292 instances of links</li>
+        </ul>
+        <img class="landmark" src="img/img8.png" alt="placeholder">
+        <img class="landmark" src="img/img9.png" alt="placeholder">
+      </div>
+
+
+      <br>
+      <br>
+      <h3> Distrubution “Google Forms” Data:</h3>
+      <img class="landmark" src="img/img10.png" alt="placeholder">
+      <img class="landmark" src="img/img11.png" alt="placeholder">
+
+      <br>
+      <br>
+      <h3> Frequency “Google Forms” Data:</h3>
+      <img class="landmark" src="img/img12.png" alt="placeholder">
+      <img class="landmark" src="img/img13.png" alt="placeholder">
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- <div id="szgarden">
+        <h1>Information resources in time of crisis</h1>
+        <img class="landmark" src="final/sz12.jpg" alt="placeholder">
+        <img class="landmark" src="final/sz13.jpeg" alt="placeholder">
+        <h4>Deliverable 1: The diffusion of shared URLs and interaction network among multiple platforms</h4>
+        <ul>
+          <li>Clean and preprocess images</li>
+          <li>Extract featuures from the images using pre-trained model VGG16</li>
+          <li>Use PCA to reduce dimensions for visulization</li>
+          <li>Cluster the features with K-means</li>
+        </ul>
+
+
+      </div> -->
+
+      <div id="tiger">
+        <h1>Study 2: Screenshot detection</h1>
+
+        <strong><h3 class="text">This study aims to identify and characterize the spreading of harmful screenshots across multiple platforms related to the Russia-Ukraine crisis</h3></strong>
+        <!-- <br>
+        <h4>Method 2: Design an AI approach to automatically detect the diffusion of moderated content on different platforms</h4>
+        <h5>Data</h5>
+        <ul>
+          <li>Twitter datasets from 2022-2, 2022-3, 2022-4</li>
+          <li>Each month contains hundreds of csvs</li>
+          <li>Each csv contains thousands of urls</li>
+        </ul> -->
+        <br>
+        <h4>Deliverable 1: Download and create images</h4>
+        <!-- <h5>Data gathering:</h5>
+        <ul>
+          <li>1.5 million twitter images downloaded</li>
+          <li>Generating positive examples for supervised learning using the ‘tweet-capture’ package</li>
+          <li>Kaggle screenshots dataset</li>
+
+        </ul> -->
+        <br>
+        <h4>Deliverable 2: Build a supervised learning model using CNN</h4>
+        <!-- <h5>Create data and setups</h5>
+        <ul>
+          <li>Generating positive examples for supervised learning using the tweet-capture packages</li>
+          <li>Convolutional Neural Networks with Pytorch and Tensorflow</li>
+          <li>Test on both labeled and unlabeled data/images to see if an images is a screenshot or not</li>
+        </ul> -->
+        <h5>Data gathering:</h5>
+        <ul>
+          <li>1.5 million twitter images downloaded</li>
+          <li>Generating positive examples for supervised learning using the ‘tweet-capture’ package</li>
+          <li>Kaggle screenshots dataset</li>
+
+        </ul>
+        <br>
+        <h5>Scenarios</h5>
+        <ul>
+          <li>First Scenario:
+            <ol>
+              Training: Screenshot: 2808 Non-Screenshot: 2808; Testing: Screenshot: 702 Non-Screenshot: 701
+            </ol>
+            <ol>
+              Accuracy: 0.9885958660014256; F1: 0.9885954488465368; Recall: 0.9828815977175464; Roc-Auc: 0.9885917960097704
+            </ol>
+          </li>
+          <br>
+          <img class="landmark" src="img/first_model_confusionmatrix_testing.png" alt="sz">
+          <img class="landmark" src="img/first_model_prediction_nonscreenshot3.png" alt="sz">
+          <img class="landmark" src="img/first_model_prediction_screenshot1.png" alt="sz">
+          <br>
+          <br>
+          <br>
+          <li>Second Scenario:
+            <ol>
+              Training: Screenshot: 3510 Non-Screenshot: 3510; Testing: Random Twitter images 100 Non-screenshots, 100 screenshots
+            </ol>
+            <ol>
+              Accuracy: 0.76; F1 0.6883116883116882; Recall 0.9814814814814815; Precision 0.53
+            </ol>
+            <ol>
+              Train the model on labeled data (5616 + 1403); Testing: kaggle screenshots
+            </ol>
+            <ol>
+              Out of 174 kaggle twitter screenshots, 162 are misclassified as non–screenshots even though they are screenshots. Only 12 images are predicted correctly. The result is not optimistic. 12/174 = 0.0689
+            </ol>
+            <ol>
+              This might be due to the fact that kaggle screenshots have very different form from the tweet-capture screenshots
+            </ol>
+          </li>
+          <img class="landmark" src="img/second_model_prediction_nonscreenshot1.png" alt="sz">
+          <img class="landmark" src="img/second_model_prediction_screenshot3.png" alt="sz">
+          <br>
+        </ul>
+
+        <br>
+        <br>
+        <h4>Deliverable 3: Build an unsupervised learning model</h4>
+        <ul>
+          Methodology: Cluster images based on visual similarity to identify tweet screenshot.
+          <li>Clean and preprocess images</li>
+          <li>Extract featuures from the images using pre-trained model VGG16</li>
+          <li>Use PCA to reduce dimensions for visulization</li>
+          <li>Cluster the features with K-means</li>
+        </ul>
+        <img class="landmark" id="IMG5" src="img/WechatIMG512.png" alt="sz">
+        <h4>Binary Clustering</h4>
+        <h5>Data</h5>
+        <ul>
+          <li>Kaggle screenshot dataset</li>
+          <li>174 tweet screenshots</li>
+          <li>305 other platform screenshots</li>
+        </ul>
+        <h5>Result</h5>
+        <img class="landmark" src="img/Screen Shot 2022-11-28 at 9.33.55 AM.png" alt="sz">
+        <img class="landmark" src="img/Screen Shot 2022-11-28 at 9.34.16 AM.png" alt="sz">
+        <ul>
+          <li>ROC AUC: 0.614</li>
+          <li>Accuracy: 0.616</li>
+          <li>F1: 0.535</li>
+          <li>Precision: 0.477</li>
+          <li>Recall: 0.609</li>
+        </ul>
+        <br>
+
+        <h5>Data</h5>
+        <ul>
+          <li>2000 tweet screenshots (Tweet-Capture)</li>
+          <li>2000 other platform screenshots (Kaggle)</li>
+        </ul>
+        <h5>Result</h5>
+        <img class="landmark" src="img/Screen Shot 2022-11-21 at 11.59.17 PM.png" alt="sz">
+        <img class="landmark" src="img/Screen Shot 2022-11-21 at 11.59.07 PM.png" alt="sz">
+        <ul>
+          <li>ROC AUC: 0.995</li>
+          <li>Accuracy: 0.995</li>
+          <li>F1: 0.995</li>
+          <li>Precision: 0.998</li>
+          <li>Recall: 0.993</li>
+        </ul>
+        <br>
+
+        <h4>Multiclass Clustering</h4>
+        <h5>Data</h5>
+        <ul>
+          <li>500 tweet screenshots (Tweet-Capture)</li>
+          <li>500 other platform screenshots (Kaggle)</li>
+          <li>500 random images (HPC)</li>
+        </ul>
+        <h5>Result</h5>
+        <img class="landmark" src="img/Screen Shot 2022-11-14 at 11.24.02 AM.png" alt="sz">
+        <img class="landmark" src="img/Screen Shot 2022-11-14 at 11.50.31 AM.png" alt="sz">
+        <ul>
+          <li>ROC AUC: 0.824</li>
+          <li>Accuracy: 0.715</li>
+          <li>F1: 0.7</li>
+          <li>Precision: 0.7</li>
+          <li>Recall: 0.7</li>
+        </ul>
+
+      </div>
+
+      <!-- <div id="conclusion">
+        <h1>Conclusion</h1>
+        <img class="landmark" src="final/sz18.jpeg" alt="sz">
+        <img class="landmark" src="final/sz20.jpeg" alt="sz">
+        <h3 class="text">conclusion here</h3>
+      </div> -->
+
+    </div>
+
+    <div id="footer">
+      CKIDS DataFest Fall 2022: Identification and characterization of cross-platform misinformation diffusion &copy;
+    </div>
+  </body>
+</html>
